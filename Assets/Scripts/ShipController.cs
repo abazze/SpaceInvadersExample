@@ -37,6 +37,7 @@ public class ShipController : MonoBehaviour
     // FixedUpdate se llama en cada fixed frame-rate frame. (50 llamadas por segundo, por defecto)
     void FixedUpdate()
     {
+        //Limitamos la velocidad (fuerza aplicada)
         currentSpeed = Mathf.Min(speed, MAX_SPEED);
 
         // Aplica la fuerza al Rigidbody2d
